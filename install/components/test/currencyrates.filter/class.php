@@ -25,12 +25,12 @@ class CurrencyRatesFilterComponent extends CBitrixComponent
 
         $filter = [];
 
-        // 🔹 код валюты
+        // код валюты
         if ($code !== '') {
             $filter['=CODE'] = $code;
         }
 
-        // 🔹 даты
+        // даты
         if ($dateFrom) {
             $filter['>=DATE'] = new \Bitrix\Main\Type\DateTime($dateFrom.' 00:00:00', 'Y-m-d H:i:s');
         }
@@ -38,7 +38,7 @@ class CurrencyRatesFilterComponent extends CBitrixComponent
             $filter['<=DATE'] = new \Bitrix\Main\Type\DateTime($dateTo.' 23:59:59', 'Y-m-d H:i:s');
         }
 
-        // 🔹 курс
+        // курс
         if ($rateFrom !== '') {
             $filter['>=COURSE'] = (float)$rateFrom;
         }

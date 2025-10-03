@@ -39,7 +39,7 @@ $arComponentParameters = [
         ],
         'NAV_ID' => [
             'PARENT' => 'BASE',
-            'NAME' => 'ID постраничной навигации (опционально)',
+            'NAME' => 'ID постраничной навигации',
             'TYPE' => 'STRING',
             'DEFAULT' => '',
         ],
